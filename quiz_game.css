@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.login_div1 , .login_div2
+	{
+        background-color: beige;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+
+#login {
+    animation: wiggle 2s linear infinite;
+    height: 60px;
+    width: 100px;
+    text-align:center;
+  color:rgb(11, 1, 1);
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+  font-weight: bold;
+  background-color: beige;
+  border-radius: 20px;
+}
+  
+  
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  #name{
+    text-align:center;
+  color:rgb(3, 1, 1);
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+  #player1{
+    text-align:center;
+  color:black;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+  #player2{
+    text-align:center;
+  color:black;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+  font-weight: bold;
+}
+#player1_name_input{
+    background-color:rgb(255, 253, 239);
+    outline: 2px solid black;
+}
+#player2_name_input{
+    background-color: rgb(255, 253, 239);
+    outline: 2px solid black;
+}
+  
+  
